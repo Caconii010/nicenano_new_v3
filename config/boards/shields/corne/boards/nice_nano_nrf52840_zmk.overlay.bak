@@ -3,6 +3,7 @@
 / {
     chosen {
         zmk,underglow = &underglow_strip;
+        zmk,backlight = &backlight_strip;
     };
 };
 
