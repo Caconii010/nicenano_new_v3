@@ -2,7 +2,8 @@
 
 / {
     chosen {
-        zmk,underglow = &led_strip;
+        zmk,underglow = &underglow_strip;
+        zmk,backlight = &backlight_strip;
     };
 };
 
@@ -29,7 +30,7 @@
     pinctrl-1 = <&spi3_sleep>;
     pinctrl-names = "default", "sleep";
 
-    led_strip: ws2812@0 {
+    underglow_strip: ws2812@0 {
         compatible = "worldsemi,ws2812-spi";
 
         reg = <0>;
